@@ -1,0 +1,254 @@
+{
+  "tree" : {
+    "MemberName" : "Mr. Gagan",
+    "name" : "Gagan",
+    "type" : "type1",
+    "MemberDOB" : "28-12-1920",
+    "MemberDOD" : "30-06-2000",
+    "label" : "Root",
+    "Spouse" : "Mrs. Sita",
+    "SpouseDOB" : "27-09-1922",
+    "SpouseDOD" : "24-10-1999",
+    "link" : {
+      "name" : "Daughter",
+      "MemberName" : "Gagan",
+      "direction" : "ASYN"
+    },
+    "children" : [{
+      "MemberName" : "Akash ",
+      "name" : "Akash ",
+      "type" : "type2",
+      "MemberDOB" : "08-03-1960",
+      "MemberDOD" : "",
+      "label" : "child1",
+      "Spouse" : "Mrs. Nandini",
+      "SpouseDOB" : "27-09-1970",
+      "SpouseDOD" : "24-10-1999",
+      "link" : {
+        "name" : "Daughter",
+        "MemberName" : "Akash ",
+        "direction" : "ASYN"
+      },
+      "children" : [{
+        "MemberName" : "Nabh",
+        "name" : "Nabh",
+        "type" : "type3",
+        "MemberDOB" : "01-01-2000",
+        "label" : "child2",
+        "Spouse" : "Neeru",
+        "MemberDOD" : "30-06-2000",
+        "SpouseDOB" : "27-09-1922",
+        "SpouseDOD" : "24-10-1999",
+        "link" : {
+          "name" : "Son",
+          "MemberName" : "Nabh",
+          "direction" : "ASYN"
+        },
+        "children" : []
+      },
+        {
+        "MemberName" : "Shubhi",
+        "name" : "Shubhi",
+        "type" : "type3",
+        "MemberDOB" : "04-04-1998",
+        "label" : "Shubhi",
+        "Spouse" : "Shubham",
+        "MemberDOD" : "30-06-2000",
+        "SpouseDOB" : "27-09-1922",
+        "SpouseDOD" : "24-10-1999",
+        "link" : {
+          "name" : "Daughter",
+          "MemberName" : "Nabh",
+          "direction" : "ASYN"
+        },
+        "children" : []
+      }
+      ]
+    },
+      {
+      "MemberName" : "vishal",
+      "name" : "vishal",
+      "type" : "type2",
+      "MemberDOB" : "12-12-1989",
+      "label" : "vishal",
+      "Spouse" : "",
+      "MemberDOD" : "30-06-2000",
+      "SpouseDOB" : "",
+      "SpouseDOD" : "",
+      "link" : {
+        "name" : "Son",
+        "MemberName" : "vishal",
+        "direction" : "ASYN"
+      },
+      "children" : []
+    }, 
+      {
+      "MemberName" : "Garima",
+      "name" : "Garima",
+      "type" : "type2",
+      "MemberDOB" : "27-09-1945",
+      "label" : "Garima",
+      "Spouse" : "Shankar",
+        "MemberDOD" : "30-06-2000",
+        "SpouseDOB" : "27-09-1948",
+        "SpouseDOD" : "24-10-1999",
+      "link" : {
+        "name" : "Daughter",
+        "MemberName" : "Garima",
+        "direction" : "ASYN"
+      },
+      "children" : [{
+        "MemberName" : "Krishna",
+        "name" : "Krishna",
+        "type" : "type3",
+        "MemberDOB" : "27-09-1970",
+        "label" : "Krishna",
+        "Spouse" : "Radha",
+        "MemberDOD" : "30-06-2000",
+        "SpouseDOB" : "27-09-1922",
+        "SpouseDOD" : "24-10-1999",
+        "link" : {
+          "name" : "Son",
+          "MemberName" : "Krishna",
+          "direction" : "ASYN"
+        },
+        "children" : [{
+          "MemberName" : "Ram",
+          "name" : "Ram",
+          "type" : "type4",
+          "MemberDOB" : "01-07-2000",
+          "label" : "Ram",
+          "Spouse" : "Vaidehi",
+          "MemberDOD" : "30-06-2000",
+          "SpouseDOB" : "27-09-2001",
+          "SpouseDOD" : "24-10-1999",
+          "link" : {
+            "name" : "Son",
+            "MemberName" : "Ram",
+            "direction" : "ASYN"
+          },
+          "children" : []
+        }
+        ]
+      },
+        {
+        "MemberName" : "Komal",
+        "name" : "Komal",
+        "type" : "type3",
+        "MemberDOB" : "27-09-1960",
+        "label" : "Komal",
+        "Spouse" : "jatil",
+        "MemberDOD" : "30-06-2000",
+        "SpouseDOB" : "",
+        "SpouseDOD" : "24-10-1999",
+        "link" : {
+          "name" : "Daughter",
+          "MemberName" : "Komal",
+          "direction" : "ASYN"
+        },
+        "children" : [{
+          "MemberName" : "Raja",
+          "name" : "Raja",
+          "type" : "type4",
+          "MemberDOB" : "27-09-1955",
+          "label" : "Raja",
+          "Spouse" : "Rani",
+          "MemberDOD" : "30-06-2000",
+          "SpouseDOB" : "27-09-1922",
+          "SpouseDOD" : "24-10-1999",
+          "link" : {
+            "name" : "Son",
+            "MemberName" : "Ram",
+            "direction" : "ASYN"
+          },
+          "children" : [
+            {
+              "MemberName": "Anil",
+              "name": "Anil",
+              "type": "type5",
+              "MemberDOB": "27-09-1980",
+              "label": "Anil",
+              "Spouse": "Neel",
+              "MemberDOD" : "30-06-2000",
+              "SpouseDOB" : "27-09-1982",
+              "SpouseDOD" : "24-10-1999",
+              "link": {
+                "name": "Son",
+                "MemberName": "Anil",
+                "direction": "ASYN"
+              },
+              "children": [{
+                "MemberName": "Mayn",
+                "name": "M Shrivastava",
+                "type": "type6",
+                "MemberDOB": "12-10-1995",
+                "label": "Child1",
+                "Spouse": "Aarti",
+                "MemberDOD" : "",
+                "SpouseDOB" : "27-09-1995",
+                "SpouseDOD" : "",
+                "link": {
+                  "name": "Son",
+                  "MemberName": "Mayn",
+                  "direction": "ASYN"
+                },
+                "children": [{
+                  "MemberName": "Mo",
+                  "name": "I am M",
+                  "type": "type7",
+                  "MemberDOB": "12-10-2017",
+                  "label": "None",
+                  "Spouse": "",
+                  "MemberDOD" : "",
+                  "SpouseDOB" : "",
+                  "SpouseDOD" : "",
+                  "link": {
+                    "name": "Daughter",
+                    "MemberName": "Mo",
+                    "direction": "ASYN"
+                  },
+                  "children": []
+                }]
+              }]
+            },{
+              "MemberName": "Bony",
+              "name": "Bony",
+              "type": "type5",
+              "MemberDOB": "27-09-1980",
+              "label": "Bony",
+              "Spouse": "Sony",
+              "MemberDOD" : "30-06-2000",
+              "SpouseDOB" : "27-09-1982",
+              "SpouseDOD" : "24-10-1999",
+              "link": {
+                "name": "Son",
+                "MemberName": "Bony",
+                "direction": "ASYN"
+              },
+              "children": [{
+                "MemberName": "Man",
+                "name": "M Shrivastava",
+                "type": "type6",
+                "MemberDOB": "12-10-1995",
+                "label": "Child1",
+                "Spouse": "Aarti",
+                "MemberDOD" : "",
+                "SpouseDOB" : "27-09-1995",
+                "SpouseDOD" : "",
+                "link": {
+                  "name": "Son",
+                  "MemberName": "Man",
+                  "direction": "ASYN"
+                },
+                "children": []
+              }]
+            }
+            ]
+        }
+        ]
+      }
+      ]
+    }
+    ]
+  }
+}
