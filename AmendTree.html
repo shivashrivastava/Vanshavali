@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>Vanshavali-Add Member</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alike+Angular">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=0d0737085b0f07fce4c00ef29a257731">
+    <link rel="stylesheet" type="text/css" href="css/tree-boxes.css">
+
+
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <script src="js/tree-boxes.js" type="text/javascript"></script>
+    <script src="js/Vanshavali.js" type="text/javascript"></script>
+</head>
+
+<body style="background-color: #ffffff;">
+    <div class="card text-success bg-success border-dark border rounded" style="background-color: #37434d;"></div>
+    <header class="border rounded-0 border-dark"></header>
+    <div class="card border-white border rounded" style="background-color: #37434d;height: 38px;">
+        <div class="card-header border rounded-0 border-dark" style="height: 35px;background-color: #37434d;color: #020304;">
+            <h5 class="text-center float-none pulse animated mb-0" style="padding: 0px 1px 7px 4px;margin: -8px;background-color: #37434d;font-family: 'Bilbo Swash Caps', cursive;font-size: 30px;color: #ffffff;">Vanshavali</h5>
+        </div>
+    </div>
+    <!-- Start: Navigation with Search -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color: #121110;padding: 0px;margin: -2px;height: 50px;width: 100%;">
+        <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/tree-svg-image-cut-file.png?h=8ccbcf0f32758e804d56038dc7cecabe" style="width: 80px;height: 48px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="background-color: #fffafa;"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item d-flex justify-content-end align-items-start" role="presentation" style="background-color: #333333;"><a class="nav-link" href="/index.html" id="1" style="color: rgb(245,235,235);background-color: #121110;padding-top: 0px;padding-bottom: 0px;">Home</a></li>
+                    <li class="nav-item d-flex justify-content-end align-items-start" role="presentation"
+                        style="background-color: #333333;"><a class="nav-link" href="/FamilyTree.html" id="2" style="color: rgb(245,235,235);background-color: #121110;padding-bottom: 0px;padding-top: 0px;">Family Tree</a></li>
+                    <li class="nav-item d-flex justify-content-end align-items-start"
+                        role="presentation" style="background-color: #333333;color: rgb(51,51,51);opacity: 1;"><a class="nav-link d-flex" href="/AmendTree.html" id="3" style="color: rgb(245,235,235);background-color: #121110;filter: grayscale(47%);padding-top: 0px;padding-bottom: 0px;">Amend Tree</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- End: Navigation with Search -->
+    <form class="text-center" style="background-color: #66d7d7;height: 40px;width: 100%;background-image: url(&quot;assets/img/quotes.jpeg?h=5e6a932590e55fe1b6160be5008cfd56&quot;);"><label class="text-center" style="padding: 0px;height: 30px;width: 220px;"></label></form>
+    <div>
+        <ul class="nav nav-tabs" style="background-color: #ffffff;height: 43px;width: 100%;">
+            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1" style="color: #222222;background-color: #ffffff;" onclick="AddMember()">Add Member</a></li>
+            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2" style="color: #222222;background-color: #ffffff;">Update</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" role="tabpanel" id="tab-1" style="background-color: #ffffff;">
+                <div class="text-center text-sm-center text-md-center text-lg-center text-xl-center border-dark d-md-flex d-xl-flex justify-content-xl-start align-items-xl-start" style="height: 50px;background-color: #ffffff;width: 90%;margin-left: 10px;"><button class="btn btn-primary border rounded border-dark float-left" type="submit" style="padding: 6px 12px 5px 8px;margin: 10px 8px 0px 13px;background-color: #79a8cf;color: #ffffff;">Add Member</button><button class="btn btn-primary border rounded border-dark float-left"
+                        type="submit" style="background-color: #79a8cf;margin: 10px 13px 0px 8px;padding: 6px 12px 5px 8px;color: #ffffff;">Go To Tree</button></div>
+                <div class="container text-center border rounded-0 d-flex float-none float-sm-none float-md-none float-lg-left d-xl-flex float-xl-left justify-content-center mr-auto justify-content-xl-center align-items-xl-center"
+                    style="height: 850px;opacity: 1;padding: 0px;background-color: rgba(241,235,235,0.25);margin: 0px 0px 0px 10px;margin-left: 20px;margin-right: 0px;padding-top: 10px;min-height: 500px;max-height: 1200px;margin-top: 0px;margin-bottom: 0px;width: 90%;filter: grayscale(18%);">
+                    <form class="border rounded" style="background-color: #f4f1f1;margin-top: 0px;margin-bottom: 0px;margin-left: 10px;height: 820px;width: 91%;margin-right: 10px;">
+                        <div>
+                            <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Member's Name</label>
+                            <input
+                                id="name" class="form-control float-none" type="text" style="width: 40%;"></div>
+                        <div>
+                            <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-center align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Gender &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                            <div
+                                class="float-left d-xl-flex justify-content-xl-start align-items-xl-center" style="width: 15%;height: 38px;"><input class="float-none" type="radio"><label class="d-xl-flex justify-content-xl-center align-items-xl-end" style="height: 35px;width: 70px;">Male &nbsp;&nbsp;</label></div>
+                        <div class="float-left d-xl-flex justify-content-xl-start align-items-xl-center"
+                            style="width: 15%;height: 38px;"><input class="float-none" type="radio"><label class="d-xl-flex justify-content-xl-center align-items-xl-end" style="width: 70px;height: 35px;">&nbsp;Female</label></div>
+                </div>
+                <div style="height: 38px;"></div>
+                <div style="padding: 1px;height: 48px;">
+                    <div style="height: 10px;"></div><label class="text-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;DOB &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input class="form-control"
+                        type="date" required="" style="width: 40%;"></div>
+                <div>
+                    <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;DOD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                    <input
+                        class="form-control" type="date" style="width: 40%;"></div>
+                <div style="height: 10px;filter: grayscale(57%);"></div>
+                <div style="height: 2px;filter: grayscale(57%);background-color: #ffffff;"></div>
+                <div>
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input class="form-control"
+                        type="text" style="width: 40%;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;"></div>
+                <div>
+                    <div style="height: 10px;"></div><label class="text-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Town &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                    <input
+                        class="form-control" type="text" style="width: 40%;height: 38px;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Country &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Place Of Birth &nbsp;&nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 20px;"></div>
+                <div style="height: 2px;filter: grayscale(57%);background-color: #ffffff;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Qualification &nbsp; &nbsp; &nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Profession &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp; About Me &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                    <textarea
+                        class="form-control" style="width: 40%;height: 38px;" placeholder="Interests,Achievements etc"></textarea>
+                </div>
+                <div style="height: 10px;filter: grayscale(57%);"></div>
+                <div style="height: 10px;filter: grayscale(57%);"></div>
+                <div style="height: 2px;filter: grayscale(57%);background-color: #ffffff;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Mother's Name &nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Father's Name &nbsp;&nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                <div style="height: 38px;">
+                    <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Spouse Name &nbsp;&nbsp;</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                <div style="padding: 1px;">
+                    <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;Spouse DOB &nbsp; &nbsp;&nbsp;</label>
+                    <input
+                        class="form-control" type="date" required="" style="width: 40%;"></div>
+                <div>
+                    <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;Spouse DOD &nbsp; &nbsp; &nbsp;</label>
+                    <input
+                        class="form-control" type="date" style="width: 40%;"></div>
+                <div style="height: 10px;"></div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane active" role="tabpanel" id="tab-2">
+            <div class="d-md-flex justify-content-md-start align-items-md-start" style="margin-top: 10px;">
+                <div style="height: 48px;width: 50%;"><label class="text-center border rounded-0 shadow-sm float-left d-lg-flex justify-content-lg-center align-items-lg-center" style="height: 38px;">Select Member</label>
+                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle border rounded shadow-sm float-left" data-toggle="dropdown" aria-expanded="false" type="button" style="color: rgb(254,254,254);background-color: #79a8cf;width: 30%;">Dropdown </button>
+                        <div
+                            class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                </div><button class="btn btn-primary border rounded shadow-sm float-left" type="button" style="background-color: #79a8cf;width: 20%;margin-left: 5px;">Search</button></div>
+        </div>
+        <div class="text-center text-sm-center text-md-center text-lg-center text-xl-center d-xl-flex justify-content-xl-start" style="height: 50px;margin-top: 10px;"><span id="EditDeatils" title="Edit Details"></span><img src="assets/img/61456.svg?h=0d03b44d833505bb72265dad6c029f43" style="width: 40px;height: 30px;"><button class="btn btn-primary border rounded border-light shadow-sm float-left" type="submit" style="background-color: #79a8cf;padding: 6px 12px 5px 8px;margin: 10px 8px 0px 13px;background-image: url(&quot;assets/img/61456.svg?h=0d03b44d833505bb72265dad6c029f43&quot;);">Update Details</button>
+            <button
+                class="btn btn-primary border rounded border-light shadow-sm float-left" type="submit" style="background-color: #79a8cf;margin: 10px 13px 0px 8px;padding: 6px 12px 5px 8px;">Go To Tree</button>
+        </div>
+        <div class="container text-center border rounded-0 d-flex float-none float-sm-none float-md-none float-lg-left d-xl-flex float-xl-left justify-content-center mr-auto justify-content-xl-center align-items-xl-center" style="height: 850px;opacity: 1;padding: 0px;background-color: rgba(241,235,235,0.25);margin: 0px 0px 0px 10px;margin-left: 20px;margin-right: 0px;padding-top: 10px;min-height: 500px;max-height: 1200px;margin-top: 0px;margin-bottom: 0px;width: 90%;filter: grayscale(18%);">
+            <form class="border rounded" style="background-color: #f4f1f1;margin-top: 0px;margin-bottom: 0px;margin-left: 10px;height: 820px;width: 91%;margin-right: 10px;">
+                <div>
+                    <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Member's Name</label>
+                    <input
+                        class="form-control float-none" type="text" style="width: 40%;"></div>
+                <div>
+                    <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-center align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Gender &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                    <div
+                        class="float-left d-xl-flex justify-content-xl-start align-items-xl-center" style="width: 15%;height: 38px;"><input class="float-none" type="radio"><label class="d-xl-flex justify-content-xl-center align-items-xl-end" style="height: 35px;width: 70px;">Male &nbsp;&nbsp;</label></div>
+                <div class="float-left d-xl-flex justify-content-xl-start align-items-xl-center"
+                    style="width: 15%;height: 38px;"><input class="float-none" type="radio"><label class="d-xl-flex justify-content-xl-center align-items-xl-end" style="width: 70px;height: 35px;">&nbsp;Female</label></div>
+        </div>
+        <div style="height: 38px;"></div>
+        <div style="padding: 1px;height: 48px;">
+            <div style="height: 10px;"></div><label class="text-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;DOB &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input id="DOB" class="form-control"
+                type="date" required="" style="width: 40%;"></div>
+        <div>
+            <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;DOD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input
+                class="form-control" type="date" style="width: 40%;"></div>
+        <div style="height: 10px;filter: grayscale(57%);"></div>
+        <div style="height: 2px;filter: grayscale(57%);background-color: #ffffff;"></div>
+        <div>
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input class="form-control"
+                type="text" style="width: 40%;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;"></div>
+        <div>
+            <div style="height: 10px;"></div><label class="text-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Town &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input
+                class="form-control" type="text" style="width: 40%;height: 38px;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Country &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Place Of Birth &nbsp;&nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 20px;"></div>
+        <div style="height: 2px;filter: grayscale(57%);background-color: #ffffff;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Qualification &nbsp; &nbsp; &nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Profession &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp; About Me &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+            <textarea
+                class="form-control" style="width: 40%;height: 38px;" placeholder="Interests,Achievements etc"></textarea>
+        </div>
+        <div style="height: 10px;filter: grayscale(57%);"></div>
+        <div style="height: 10px;filter: grayscale(57%);"></div>
+        <div style="height: 2px;filter: grayscale(57%);background-color: #ffffff;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Mother's Name &nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Father's Name &nbsp;&nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        <div style="height: 38px;">
+            <div class="shadow-none" style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left d-flex float-left d-xl-flex align-items-end align-items-md-center justify-content-xl-center align-items-xl-center" style="margin-top: 0px;height: 38px;width: 45%;">&nbsp;Spouse Name &nbsp;&nbsp;</label>
+            <input
+                class="form-control float-none" type="text" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        <div style="padding: 1px;">
+            <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;Spouse DOB &nbsp; &nbsp;&nbsp;</label><input class="form-control"
+                type="date" required="" style="width: 40%;"></div>
+        <div>
+            <div style="height: 10px;"></div><label class="text-left text-sm-left text-md-left text-lg-left text-xl-left float-left d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 45%;height: 38px;">&nbsp;Spouse DOD &nbsp; &nbsp; &nbsp;</label><input class="form-control"
+                type="date" style="width: 40%;"></div>
+        <div style="height: 10px;"></div>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
